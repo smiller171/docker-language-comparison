@@ -24,3 +24,4 @@ _testmain.go
 *.prof
 go-hello/go-hello
 java-hello/hello.class
+*.swp
