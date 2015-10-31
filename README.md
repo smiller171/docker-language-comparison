@@ -1,5 +1,5 @@
 # docker-language-comparison
-A Simple "Hello World" app built in Java, Python, and Go for performance testing.  
+A Simple "Hello World" app built in Java, Python, and Go for Docker performance testing.  
 ## Methodology
 ###Environment
 * Go app will be compiled with no external dependancies. I expect the Go app to run the fastest due to this ability
