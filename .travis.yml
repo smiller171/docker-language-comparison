@@ -9,9 +9,6 @@ env:
   - lang=go
   - lang=java
   - lang=python
-install:
-  - docker rm `docker ps -a -q`
-  - docker rmi `docker images -q`
 script:
   - echo "## $lang" > results.md
   - echo "### Including download time" >> results.md
