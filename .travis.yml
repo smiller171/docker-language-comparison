@@ -12,16 +12,16 @@ env:
 script:
   - echo "## $lang" > results.md
   - echo "### Including download time" >> results.md
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
   - docker rm `docker ps -a -q`
   - docker rmi `docker images -q`
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
   - docker rm `docker ps -a -q`
   - docker rmi `docker images -q`
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
   - echo "" >> results.md
   - echo "### Including download time" >> results.md
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
-  - time docker run scottmiller171/docker-language-comparison:$lang >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
+  - {time docker run scottmiller171/docker-language-comparison:$lang} >> results.md
   - cat results.md
