@@ -1,0 +1,2 @@
+build:
+	javac hello.java
